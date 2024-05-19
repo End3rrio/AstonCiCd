@@ -16,5 +16,11 @@ jobs:
 
       - name: Build docker Image
         run: |
-          ls ./target
           docker build -t test:1.0 .
+
+      - name: Deploy
+        run: |
+          docker stop astoncicd
+          docker rm astoncicd
+          docker run -p 7070:7070 --name astoncicd -d test:1.0
+          
