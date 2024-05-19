@@ -16,7 +16,7 @@ jobs:
 
       - name: Build docker Image
         run: |
-          docker build -t test:1.0 .
+          docker build -t astoncicd:1.0 .
 
       - name: Deploy
         run: |
