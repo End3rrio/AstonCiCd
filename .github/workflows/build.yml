@@ -22,5 +22,5 @@ jobs:
         run: |
           docker stop astoncicd
           docker rm astoncicd
-          docker run -p 7070:7070 --name astoncicd -d astoncicd:1.0
+          docker run -p 7070:7070 --name astoncicd -d astoncicd:latest
           
