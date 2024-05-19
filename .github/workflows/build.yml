@@ -16,5 +16,5 @@ jobs:
 
       - name: Build docker Image
         run: |
-          ls ./target
+          ls 
           docker build -t test:1.0 .
