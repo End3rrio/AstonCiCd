@@ -6,7 +6,8 @@ on:
 
 jobs:
   build:
-
+ #   strategy:
+   #     matrix:
     runs-on: self-hosted
 
     steps:
